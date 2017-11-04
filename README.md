@@ -12,6 +12,8 @@ Através do emissor de Nota Fiscal da WebmaniaBR®, você conta com a emissão e
 
 ## Exemplos
 
+Desenvolvimento baseado na classe nativa [NSURLSession](https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSession_class/).
+
 - **statusSefaz**: Verifica se o Sefaz está Online ou Offline.
 - **validadeCertificado**: Verifica se o Certificado A1 é válido e quantos dias faltam para expirar.
 - **emissaoNotaFiscal**: Emissão da Nota Fiscal junto ao SEFAZ.
