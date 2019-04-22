@@ -8,10 +8,10 @@ let headers = [
   "x-access-token": "SEU_ACCESS_TOKEN",
   "x-access-token-secret": "SEU_ACCESS_TOKEN_SECRET"
 ]
+
 let parameters = [
-  "chave": "45150819652219000198550990000000011442380343",
-  "correcao": "O CFOP correto é 5.102 referente a revenda tributada no mesmo estado.",
-  "ambiente": "1"
+  "chave": "00000000000000000000000000000000000000000000",
+  "correcao": "O CFOP correto é 5.102 referente a revenda tributada no mesmo estado."
 ] as [String : Any]
 
 let postData = JSONSerialization.data(withJSONObject: parameters, options: [])

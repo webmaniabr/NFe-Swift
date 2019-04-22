@@ -8,10 +8,11 @@ let headers = [
   "x-access-token": "SEU_ACCESS_TOKEN",
   "x-access-token-secret": "SEU_ACCESS_TOKEN_SECRET"
 ]
+
 let parameters = [
   "sequencia": "101-109",
   "motivo": "Inutilização por problemas técnicos.",
-  "ambiente": "1",
+  "ambiente": "2",
   "serie": "99",
   "modelo": "1"
 ] as [String : Any]

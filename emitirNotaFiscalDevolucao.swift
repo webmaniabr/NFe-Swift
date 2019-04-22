@@ -9,16 +9,19 @@ let headers = [
   "x-access-token-secret": "SEU_ACCESS_TOKEN_SECRET"
 ]
 let parameters = [
-  "chave": "00000000000000000000000000000000000000000000",
-  "motivo": "Cancelamento por motivos administrativos."
+  "chave": "45150819652219000198550990000000011442380343",
+  "natureza_operacao": "Devolução de venda de produção do estabelecimento",
+  "codigo_cfop": "1.202",
+  "produtos": [2, 3],
+  "ambiente": "1"
 ] as [String : Any]
 
 let postData = JSONSerialization.data(withJSONObject: parameters, options: [])
 
-let request = NSMutableURLRequest(url: NSURL(string: "https://webmaniabr.com/api/1/nfe/cancelar/")! as URL,
+let request = NSMutableURLRequest(url: NSURL(string: "https://webmaniabr.com/api/1/nfe/devolucao/")! as URL,
                                         cachePolicy: .useProtocolCachePolicy,
                                     timeoutInterval: 10.0)
-request.httpMethod = "PUT"
+request.httpMethod = "POST"
 request.allHTTPHeaderFields = headers
 request.httpBody = postData as Data
 
